@@ -7,7 +7,7 @@ toggle.addEventListener('click', () => {
 document.querySelectorAll('nav a').forEach(link => link.addEventListener('click', () => document.body.classList.remove('menu-open')));
 document.getElementById('year').textContent = new Date().getFullYear();
 const observer = new IntersectionObserver(entries => entries.forEach(entry => { if (entry.isIntersecting) { entry.target.classList.add('visible'); observer.unobserve(entry.target); }}), { threshold: 0.12 });
-document.querySelectorAll('.reveal, .project, .timeline article, .achievement-list a, .stats > div').forEach(el => observer.observe(el));
+document.querySelectorAll('.reveal, .featured-project, .project-card, .signal-grid article, .tech-list article, .experience article, .credentials a').forEach(el => observer.observe(el));
 
 const form = document.getElementById('contact-form');
 const status = document.getElementById('form-status');
