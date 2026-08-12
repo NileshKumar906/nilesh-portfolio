@@ -5,19 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Nilesh Kumar - Software engineer building reliable mobile products and backend systems." />
     <meta name="theme-color" content="#080b14" />
+    <meta property="og:title" content="Nilesh Kumar | Software Engineer" />
+    <meta property="og:description" content="Software engineer building reliable mobile products and backend systems." />
+    <meta property="og:image" content="/social-preview.png" />
+    <meta property="og:type" content="website" />
     <title>Nilesh Kumar | Software Engineer</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <div class="scroll-progress" aria-hidden="true"><span></span></div>
     <div class="page-grid" aria-hidden="true"></div>
     <header class="site-header shell">
       <a class="brand" href="#top" aria-label="Nilesh Kumar home"><span class="brand-mark">&lt;/&gt;</span> nilesh.dev</a>
       <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false"><span></span><span></span></button>
       <nav aria-label="Main navigation"><a href="#about">About</a><a href="#projects">Projects</a><a href="#stack">Stack</a><a href="#contact">Contact</a></nav>
-      <a class="resume-button" href="Nilesh-Kumar-Resume.pdf" download>Resume <span>↓</span></a>
+      <div class="header-actions"><button class="theme-toggle" type="button" aria-label="Switch to light theme" title="Switch theme"><span class="theme-sun">☼</span><span class="theme-moon">☾</span></button><a class="resume-button" href="Nilesh-Kumar-Resume.pdf" download>Resume <span>↓</span></a></div>
     </header>
 
     <main id="top">
@@ -27,6 +33,7 @@
           <h1 class="reveal">Engineering ideas<br />into <span>useful software.</span></h1>
           <p class="intro reveal">I'm Nilesh, a Computer Science student and mobile developer building clear, dependable applications - from a polished Flutter interface to the APIs behind it.</p>
           <div class="hero-actions reveal"><a class="button filled" href="#projects">View selected work <span>↗</span></a><a class="button outline" href="https://github.com/NileshKumar906" target="_blank" rel="noreferrer">GitHub <span>↗</span></a></div>
+          <div class="now-card reveal"><div class="avatar" aria-label="Nilesh Kumar initials">NK</div><div><p>NOW / AUGUST 2026</p><strong>Building with Flutter & learning system design.</strong></div><span class="now-indicator"></span></div>
         </div>
         <div class="terminal reveal" aria-label="Code editor illustration">
           <div class="terminal-bar"><div><i></i><i></i><i></i></div><span>nilesh@portfolio:~</span><b>⌘</b></div>
@@ -46,7 +53,7 @@
         <div class="section-label"><span>02</span><p>SELECTED PROJECTS</p></div>
         <div class="project-heading"><h2>Things I've built<br /><span>and learned from.</span></h2><p>Real projects, real constraints, and a continuous focus on the details that make software feel reliable.</p></div>
         <div class="featured-project reveal"><div class="featured-visual"><div class="visual-top"><span>01 / PRODUCTION APP</span><span class="live-dot">● LIVE ON PLAY STORE</span></div><div class="device"><div class="device-cutout"></div><div class="device-screen"><p>श्रावणी मेला</p><h3>e-Shravani</h3><small>Travel safer. Stay connected.</small><div class="sos-card"><span>Emergency SOS</span><b>+</b></div><div class="device-nav"><i></i><i></i><i></i></div></div></div><div class="wire one"></div><div class="wire two"></div></div><div class="featured-detail"><p class="project-index">01 / PUBLIC SERVICE</p><h3>e-Shravani<br /><span>Official Mela App</span></h3><p>Contributed to IIIT Bhagalpur's official app for Shravani Mela, improving key journeys for pilgrims at scale.</p><ul><li>Delivered the SOS emergency module</li><li>Added Hindi / English data support</li><li>Improved reusable UI and navigation</li></ul><a class="project-link" href="https://play.google.com/store/apps/details?id=www.eshravani.iiitbh" target="_blank" rel="noreferrer">View on Play Store <span>↗</span></a><div class="tags"><span>FLUTTER</span><span>RIVERPOD</span><span>REST API</span></div></div></div>
-        <div class="project-cards"><article class="project-card reveal"><div class="card-art yoga"><span>YOGA<span class="soft">_API</span></span><i>✦</i><small>FULL-STACK WELLNESS</small></div><div class="card-content"><p>02 / FULL-STACK</p><h3>Yoga Wellness</h3><div class="tags"><span>FLUTTER</span><span>NODE.JS</span><span>MONGODB</span></div><p class="card-text">A full-stack wellness application with a responsive mobile interface and RESTful authentication APIs.</p><div class="card-links"><a href="https://github.com/NileshKumar906/yoga" target="_blank" rel="noreferrer">FRONTEND ↗</a><a href="https://github.com/NileshKumar906/yoga-backend" target="_blank" rel="noreferrer">BACKEND ↗</a></div></div></article><article class="project-card reveal"><div class="card-art sneaker"><span>DROP_01</span><div class="shoe-shape">◒</div><small>FIREBASE / COMMERCE</small></div><div class="card-content"><p>03 / MOBILE COMMERCE</p><h3>Sneaker Store</h3><div class="tags"><span>FLUTTER</span><span>FIREBASE</span><span>FIRESTORE</span></div><p class="card-text">A responsive, real-time shopping experience designed for frictionless product discovery.</p><div class="card-links"><a href="https://github.com/NileshKumar906/Sneaker-app" target="_blank" rel="noreferrer">SOURCE CODE ↗</a></div></div></article></div>
+        <div class="project-cards"><article class="project-card reveal"><div class="card-art yoga"><span>YOGA<span class="soft">_API</span></span><i>✦</i><small>FULL-STACK WELLNESS</small><button class="project-expand" type="button" data-project="yoga">Case study <span>↗</span></button></div><div class="card-content"><p>02 / FULL-STACK</p><h3>Yoga Wellness</h3><div class="tags"><span>FLUTTER</span><span>NODE.JS</span><span>MONGODB</span></div><p class="card-text">A full-stack wellness application with a responsive mobile interface and RESTful authentication APIs.</p><div class="card-links"><a href="https://github.com/NileshKumar906/yoga" target="_blank" rel="noreferrer">FRONTEND ↗</a><a href="https://github.com/NileshKumar906/yoga-backend" target="_blank" rel="noreferrer">BACKEND ↗</a></div></div></article><article class="project-card reveal"><div class="card-art sneaker"><span>DROP_01</span><div class="shoe-shape">◒</div><small>FIREBASE / COMMERCE</small><button class="project-expand" type="button" data-project="sneaker">Case study <span>↗</span></button></div><div class="card-content"><p>03 / MOBILE COMMERCE</p><h3>Sneaker Store</h3><div class="tags"><span>FLUTTER</span><span>FIREBASE</span><span>FIRESTORE</span></div><p class="card-text">A responsive, real-time shopping experience designed for frictionless product discovery.</p><div class="card-links"><a href="https://github.com/NileshKumar906/Sneaker-app" target="_blank" rel="noreferrer">SOURCE CODE ↗</a></div></div></article></div>
       </section>
 
       <section id="stack" class="stack section"><div class="shell"><div class="section-label"><span>03</span><p>ENGINEERING TOOLKIT</p></div><div class="stack-layout"><div><h2>The tools behind<br /><span>the thinking.</span></h2><p class="body-muted">A practical toolkit for building complete applications, with curiosity for the layers beneath the interface.</p></div><div class="tech-list"><article><p>01 / MOBILE</p><h3>Flutter <span>·</span> Dart</h3><small>Responsive UI, Provider, Riverpod, Firebase</small></article><article><p>02 / BACKEND</p><h3>Node.js <span>·</span> Express</h3><small>REST APIs, MongoDB, authentication, data flows</small></article><article><p>03 / FOUNDATIONS</p><h3>C++ <span>·</span> Python <span>·</span> SQL</h3><small>DSA, OOP, DBMS, Operating Systems</small></article><article><p>04 / WORKFLOW</p><h3>Git <span>·</span> Linux</h3><small>Feature branches, pull requests, team collaboration</small></article></div></div></div></section>
@@ -55,6 +62,8 @@
 
       <section id="contact" class="contact"><div class="shell contact-wrap"><div class="section-label"><span>05</span><p>START A CONVERSATION</p></div><div class="contact-layout"><div><h2>Have a problem<br />worth <span>solving?</span></h2><p>I'm open to internships, project collaborations, and conversations around building useful software.</p><a class="contact-email" href="mailto:nileshkumar3291@gmail.com">nileshkumar3291@gmail.com <span>↗</span></a></div><form id="contact-form" class="contact-form"><label>NAME<input name="name" required maxlength="80" autocomplete="name" placeholder="Your name" /></label><label>EMAIL<input name="email" type="email" required maxlength="120" autocomplete="email" placeholder="you@company.com" /></label><label>MESSAGE<textarea name="message" required minlength="10" maxlength="2000" placeholder="Tell me about the opportunity or project."></textarea></label><button type="submit">Send message <span>↗</span></button><p id="form-status" role="status" aria-live="polite"></p></form></div><footer><span>© <span id="year"></span> NILESH KUMAR</span><div><a href="Nilesh-Kumar-Resume.pdf" download>RESUME ↓</a><a href="https://linkedin.com/in/nilesh-kumar-06549b2a8" target="_blank" rel="noreferrer">LINKEDIN ↗</a><a href="https://github.com/NileshKumar906" target="_blank" rel="noreferrer">GITHUB ↗</a></div></footer></div></section>
     </main>
+    <div class="quick-actions" aria-label="Quick actions"><a href="#contact">Message me</a><a href="Nilesh-Kumar-Resume.pdf" download>Resume ↓</a></div>
+    <dialog class="project-modal" id="project-modal" aria-labelledby="modal-title"><button class="modal-close" aria-label="Close project details">×</button><p id="modal-index"></p><h2 id="modal-title"></h2><p id="modal-summary"></p><div id="modal-stack" class="tags"></div><ul id="modal-points"></ul><div id="modal-links" class="modal-links"></div></dialog>
     <script src="script.js"></script>
   </body>
 </html>
