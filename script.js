@@ -60,8 +60,8 @@ document.querySelectorAll('.map-node').forEach(node => node.addEventListener('cl
   document.getElementById('module-tags').innerHTML = module.tags.map(tag => `<span>${tag}</span>`).join('');
 }));
 
-// Editable live status is loaded from now.json; defaults remain in the HTML when previewed without a server.
-fetch('now.json').then(response => response.ok ? response.json() : Promise.reject()).then(now => {
+// Editable live status is loaded from portfolio-now.json; defaults remain in the HTML when previewed without a server.
+fetch('portfolio-now.json').then(response => response.ok ? response.json() : Promise.reject()).then(now => {
   document.getElementById('now-headline').textContent = now.headline;
   document.getElementById('now-detail').textContent = now.detail;
   document.getElementById('now-building').textContent = now.building;
